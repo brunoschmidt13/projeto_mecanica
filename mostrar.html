@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/mostrar.css">
@@ -10,24 +9,27 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Autoteste - Consulta</title>
 </head>
-
 <body>
     <div class="container">
         <h1 id="titulo">Consultando...</h1>
         <div id="resultado"></div>
-        <a href="index.html" class="submit-button" style="margin-top: 24px; display: inline-block;"">Nova Consulta</a>
+        <a href="index.html" class="submit-button" style="margin-top: 24px; display: inline-block;">Nova Consulta</a>
     </div>
+
     <script>
-        fetch("scr/obter_resultado.php")
+        fetch("src/obter_resultado.php")
             .then(res => res.json())
             .then(data => {
                 const container = document.getElementById('resultado');
                 const titulo = document.getElementById('titulo');
+
                 if (data.length === 0) {
                     titulo.innerText = "Nenhuma manutenção encontrada.";
                     return;
                 }
-                titulo.innerText = "Histórico do Veículo: Placa " + data[0].placa;
+
+                titulo.innerText = "Histórico do Veículo: Placa " + (data[0].placa || 'desconhecida');
+
                 let tabela = `<table border="1" cellpadding="10" style="width:100%; background: rgba(255,255,255,0.1); border-radius:10px; color:white;">
                                 <tr>
                                     <th>Veículo</th>
@@ -35,14 +37,16 @@
                                     <th>Data</th>
                                     <th>Serviço</th>
                                 </tr>`;
+
                 data.forEach(l => {
                     tabela += `<tr>
-                                <td>${l.veiculo}</td>
-                                <td>${l.nome}</td>
-                                <td>${l.data_manut}</td>
-                                <td>${l.servico}</td>
-                               </tr>`;
+                        <td>${l.veiculo || 'Não informado'}</td>
+                        <td>${l.nome || 'Não informado'}</td>
+                        <td>${l.data_manut || 'Sem data'}</td>
+                        <td>${l.servico || 'Não informado'}</td>
+                    </tr>`;
                 });
+
                 tabela += "</table>";
                 container.innerHTML = tabela;
             })
@@ -51,5 +55,4 @@
             });
     </script>
 </body>
-
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -10,16 +11,25 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Autoteste Mecânica</title>
 </head>
+
 <body>
-    <div class="container">
-        <form action="scr/resultado.php" method="POST">
-            <h1>Histórico de Manutenções</h1>
-            <div class="input-container">
-                <input name="placa" placeholder="Placa" type="text" required>
-                <img width="20" height="20" src="https://img.icons8.com/ios/50/licence-plate.png" alt="user" />
-            </div>
-            <button type="submit" class="submit-button">Buscar</button>
-        </form>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="img/autoteste_logo.png" alt="user">
+        </div>
+
+        <div class="container">
+            <form action="src/resultado.php" method="POST">
+                <h1>Histórico de Manutenções</h1>
+                <div class="input-container">
+                    <input name="placa" placeholder="Placa" type="text" required>
+                    <img width="25" height="25" src="https://img.icons8.com/ios/50/FFFFFF/people-in-car.png"
+                        alt="user" />
+                </div>
+                <button type="submit" class="submit-button">Buscar</button>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
