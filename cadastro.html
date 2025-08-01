@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Manutenção</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Cadastro de Manutenção</h1>
+    <form action="src/inserir.php" method="POST">
+
+      <label for="placa">Placa:</label>
+      <input type="text" name="placa" required>
+
+      <label for="veiculo">Veículo:</label>
+      <input type="text" name="veiculo" required>
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label for="data_manut">Data da Manutenção:</label>
+      <input type="date" name="data_manut" required>
+
+      <label for="servico">Serviço:</label>
+      <textarea name="servico" rows="4" required></textarea>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+</html>

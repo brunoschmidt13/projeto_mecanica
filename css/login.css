@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: url("https://images.unsplash.com/photo-1573763688302-374349a7f3bb");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/*Estilo do texto de Login*/
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+/*Estilo do conteiner de Input - User e Passwd*/
+.input-container {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
+}
+
+/*Estilo ds campos de Input - User e Passwd*/
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+/*texto ao passar o mouse em cima dos campos input*/
+.input-container input::placeholder {
+    color: #fff;
+}
+
+/*icones de user e passwd*/
+/*.input-container img {
+    position: fixed;
+    right: 24px;
+    top: 45%;
+    margin-top: 5px;
+}
+
+/*botão entrar*/
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #00cdf1c5;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+/*hover=efeito ao passar mouse em cima*/
+.submit-button:hover {
+    background-color: #36d7ffc5;
+}

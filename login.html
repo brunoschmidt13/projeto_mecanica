@@ -17,20 +17,21 @@
         <div class="logo">
             <img src="img/autoteste_logo.png" alt="user">
         </div>
-
         <div class="container">
-            <form action="src/resultado.php" method="POST">
-                <h1>Histórico de Manutenções</h1>
-                <div class="input-container">
-                    <input name="placa" placeholder="Placa" type="text" required>
-                    <img width="25" height="25" src="https://img.icons8.com/ios/50/FFFFFF/people-in-car.png"
-                        alt="user" />
-                </div>
-                <button type="submit" class="submit-button">Buscar</button>
+            <!-- AQUI FOI ADAPTADO -->
+            <form action="src/login.php" method="POST">
+                <h1>Acesso da Plataforma</h1>
 
-                <div class="login">
-                    <a href="login.html">Login</a>
+                <div class="input-container">
+                    <input name="usuario" placeholder="Usuário" type="text" required>
+                    <!----  <img width="20" height="20" src="https://img.icons8.com/puffy-filled/32/user.png" alt="user" /> -->
                 </div>
+
+                <div class="input-container">
+                    <input name="senha" placeholder="Senha" type="password" required>
+                    <!-- <img width="20" height="20" src="https://img.icons8.com/sf-black-filled/64/password.png" alt="password" /> -->
+                </div>
+                <button type="submit" class="submit-button">Entrar</button>
             </form>
         </div>
     </div>
