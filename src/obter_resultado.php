@@ -6,3 +6,4 @@ if (isset($_SESSION['resultados'])) {
 } else {
     echo json_encode([]);
 }
+?>

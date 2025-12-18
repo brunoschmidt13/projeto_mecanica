@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body {
     background: url("https://images.unsplash.com/photo-1573763688302-374349a7f3bb");
     background-size: cover;
@@ -32,10 +33,10 @@ h1 {
 
 /*Estilo do conteiner de Input - User e Passwd*/
 .input-container {
-   position: relative;
-   width: 100%;
-   height: 50px;
-   margin: 30px 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
 
 /*Estilo ds campos de Input - User e Passwd*/

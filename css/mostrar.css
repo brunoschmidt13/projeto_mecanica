@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body {
     background: url("https://images.unsplash.com/photo-1573763688302-374349a7f3bb");
     background-size: cover;
@@ -13,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     width: 800px;
     background: transparent;
@@ -21,13 +23,14 @@ body {
     border-radius: 10px;
     padding: 30px 40px;
 }
+
 h1 {
     font-size: 36px;
     text-align: center;
     color: #fff;
 }
-.container a
-{
+
+.container a {
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -35,11 +38,12 @@ h1 {
 }
 
 .input-container {
-   position: relative;
-   width: 100%;
-   height: 50px;
-   margin: 30px 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
+
 .input-container input {
     width: 100%;
     height: 100%;
@@ -52,18 +56,22 @@ h1 {
     color: #fff;
     padding: 20px 45px 20px 20px;
 }
+
 .input-container input::placeholder {
     color: #fff;
 }
+
 .input-container img {
     position: absolute;
     right: 24px;
     top: 10%;
     margin-top: 10px;
 }
+
 .submit-button {
     display: block;
-    margin: 24px auto 0 auto; /* cima, direita, baixo, esquerda */
+    margin: 24px auto 0 auto;
+    /* cima, direita, baixo, esquerda */
     width: 100%;
     height: 50px;
     background-color: #00cdf1c5;
@@ -74,6 +82,7 @@ h1 {
     cursor: pointer;
     font-size: 16px;
 }
+
 .submit-button:hover {
     background-color: #36d7ffc5;
 }
